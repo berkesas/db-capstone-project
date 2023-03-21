@@ -1,0 +1,1 @@
+CREATE ALGORITHM=UNDEFINED DEFINER=`workbench`@`localhost` SQL SECURITY DEFINER VIEW `ordersview` AS select `orders`.`OrderID` AS `OrderID`,`orders`.`Quantity` AS `Quantity`,`orders`.`TotalCost` AS `TotalCost` from `orders` where (`orders`.`Quantity` > 2);
